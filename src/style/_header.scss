@@ -1,0 +1,86 @@
+/* Header */
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+}
+
+.header__nav-right {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid $item-border;
+  padding-left: 20px;
+}
+.header__nav {
+  display: flex;
+}
+
+.header__nav-contacts {
+  display: none;
+  margin-right: 20px;
+  @media screen and (min-width: $screen-md) {
+    display: inline-block;
+  }
+  @media screen and (min-width: $screen-lg) {
+    display: none;
+  }
+}
+.header__btn {
+  margin-right: 16px;
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+.header__btn-text {
+  display: none;
+  @media screen and (min-width: $screen-lg) {
+    display: inline-block;
+    margin-right: 8px;
+  }
+}
+.header__btn:last-child {
+  margin-right: 0;
+}
+
+.header__btn-left {
+  @media screen and (min-width: $screen-lg) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .header__nav-contacts {
+    display: none;
+  }
+}
+
+.header__logo {
+  &:hover {
+    transform: scale(1.1);
+    transition: transform 0.1s ease-in-out;
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+  @media screen and (min-width: $screen-2xl) {
+    display: none;
+  }
+}
+
+.header__burger {
+  @media screen and (min-width: $screen-2xl) {
+    display: none;
+  }
+}

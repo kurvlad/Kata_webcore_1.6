@@ -1,0 +1,24 @@
+.footer-container {
+  display: block;
+  //   flex-direction: row;
+  text-align: center;
+
+  @media screen and (min-width: $screen-md) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 22px;
+  }
+}
+.footer-p {
+  margin-bottom: 16px;
+  @media screen and (min-width: $screen-md) {
+    margin-bottom: 0;
+  }
+}
+
+.footer-p-last {
+  text-align: center;
+  @media screen and (min-width: $screen-md) {
+    text-align: end;
+  }
+}

@@ -1,0 +1,82 @@
+.services {
+  margin-bottom: 32px;
+}
+
+.services__title {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.services__content {
+  @media screen and (min-width: $screen-md) {
+    display: flex;
+  }
+}
+.services__text {
+  @media screen and (min-width: $screen-md) {
+    max-width: 50%;
+    padding-right: 48px;
+  }
+}
+.services__links-block {
+  margin-bottom: 24px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  @media screen and (min-width: $screen-lg) {
+    white-space: wrap;
+    overflow-x: hidden;
+  }
+}
+
+.services__link {
+  display: inline-block;
+  /* white-space: nowrap; */
+  font-size: 16px;
+  padding: 8px 9px;
+  margin-right: 16px;
+}
+.services__link:last-child {
+  margin-right: 0;
+}
+.services__link-active {
+  border: 2px solid #b8ffec;
+  background-color: $white;
+  border-radius: 6px;
+}
+
+.services__p {
+  font-size: 14px;
+  margin-bottom: 16px;
+  overflow-y: hidden;
+  height: 90px;
+  @media screen and (min-width: $screen-md) {
+    height: 160px;
+  }
+}
+
+.services__more {
+  background-image: url("../img/services-more.png");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  padding: 5px;
+  padding-left: 32px;
+  background-position: center left;
+  margin-bottom: 16px;
+  background-color: white;
+  &--up {
+    background-image: url("../img/brand/expandUp.png");
+  }
+}
+
+.services__img {
+  width: 100vw;
+  margin-left: -16px;
+  // height: auto;
+  border-radius: none;
+  @media screen and (min-width: $screen-md) {
+    width: 50%;
+    height: 100%;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,101 @@
+.brand {
+  margin-bottom: 32px;
+}
+
+.h2 {
+  font-size: 24px;
+  letter-spacing: -0.2px;
+  color: $h2;
+  margin-bottom: 40px;
+}
+
+.brand__item-img {
+  max-height: 52px;
+}
+
+.brand__item-btn {
+  border: 2px solid $btn_color;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/brand/dropdown.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  cursor: pointer;
+  &:hover {
+    background-color: $item-border;
+  }
+}
+
+.brand__btn {
+  display: none;
+  font-size: 16px;
+  color: $h1;
+  background-image: url("../img/brand/expand.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-color: white;
+  border: none;
+  padding: 8px;
+  padding-left: 32px;
+  cursor: pointer;
+
+  &--up {
+    background-image: url("../img/brand/expandUp.png");
+  }
+
+  @media (min-width: $screen-sm) {
+    display: block;
+  }
+}
+
+.swiper-slide-next {
+  margin-right: 0;
+}
+
+.brand-pagination {
+  top: 73px !important;
+}
+.swiper-pagination-bullet {
+  background-color: $swiper_bullet !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $swiper_bullet-active !important;
+}
+
+.swiper-scrollbar {
+  display: none;
+}
+.brand__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: nowrap;
+  max-height: 160px;
+  margin-bottom: 24px;
+  @media (min-width: $screen-sm) {
+    flex-wrap: wrap;
+    overflow-y: hidden !important;
+  }
+}
+
+.brand__item {
+  display: flex !important;
+  box-sizing: border-box;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  height: 72px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid $item-border;
+  border-radius: 5px;
+  margin-right: 32px;
+  margin-bottom: 16px;
+
+  @media (min-width: $screen-sm) {
+    max-width: 240px;
+  }
+}
